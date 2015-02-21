@@ -1,0 +1,41 @@
+/*
+ * Built by: cowowo.cat
+ * Author: Carl Johansson
+ * File: CSS Reset
+ */
+
+
+/* BOX MODEL */
+* {
+	@include box-sizing(border-box); /* Sass - Compass */
+	}
+	
+	
+/* CSS RESET */
+html, body,
+h1, h2, h3, h4, h5, h6, 
+p, 
+input, textarea,
+pre, code, 
+img,
+dl, dt, dd, 
+ol, ul, li,
+img {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size:100%;
+	}
+
+
+textarea {display: block;}
+
+
+ul, ol {list-style:none;}
+
+
+img {
+	max-width:100%; 
+	height:auto;
+	}
