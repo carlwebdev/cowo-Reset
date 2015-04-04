@@ -40,6 +40,13 @@ img {
 	}
 	
 
+a,
+a:hover,
+a:visited {
+	text-decoration:none;
+	}
+	
+	
 /* 
  * FORMS RESET 
  */		
@@ -73,7 +80,15 @@ textarea {
 	width:100%; 
 	}		
 	
+
+
+
+textarea {
+	/* resize:none; */
+	resize:vertical;
+	}	
 	
+		
 textarea {display: block;} /* to avoid default margin bottom due to display: inline(-block) */
 
 	
