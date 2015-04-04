@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<head>
+<link href='http://fonts.googleapis.com/css?family=Cantora+One|Raleway' rel='stylesheet' type='text/css'>
+<meta charset="UTF-8">
+<title>cowo-Reset - a simple css reset by cowowo</title>
+<meta name="description" content="cowoSASS is a Sass library built by cowowo."> 
+<meta name="keywords" content="sass library cowowo, scss library"> 		
+<!-- <link rel="shortcut icon" href="assets/favicon/favicon.ico"> -->
+<link rel="stylesheet" type="text/css" href="css/global.css" > 
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes" />
+
+<!-- SyntaxHighlighter -->
+<link rel="stylesheet" href="js/plugins/SyntaxHighlighter/shCore.css" />
+<link rel="stylesheet" href="js/plugins/SyntaxHighlighter/shCoreDefault.css" />
+
+</head>
+<body>
+<div id="container">
+
+          
+    <div class="container_section_1">
+        <div class="container_content">
+    		
+            <header>
+                <div id="headerContent" class="clearfix">
+                    <div id="weblogo"><h1>cowo-Reset</h1></div>  
+                    <div id="slogan"><h2>a simple CSS Reset by <a href="https://twitter.com/carlwebdev" target="_blank">@carlwebdev</a></h2></div>  
+                </div>
+            </header>
+                  
+        </div> <!-- /container_content -->
+    </div> <!-- /container_section -->
+
+
+    <div class="container_section_2">
+        <div class="container_content">
+        
+            <div id="content">
+
+
+
+
+
+
+
+<div id="frontWrapper">
+	<div id="frontWrapper_headerMega"><h3>cowo-Reset</h3></div>
+
+
+    <div class="frontWrapper_section">
+        <div class="title"><h4>Colors</h4></div>
+        <div class="content">
+
+
+
+
+<pre class="brush:javascript">
+/*
+ * Built by: cowowo.cat
+ * Author: Carl Johansson
+ * File: CSS Reset
+ */
+
+
+/* 
+ * BOX MODEL 
+ */
+* {
+	@include box-sizing(border-box); /* Sass - Compass */
+	}
+	
+	
+/* 
+ * CSS RESET 
+ */
+html, body,
+h1, h2, h3, h4, h5, h6, 
+p, 
+input, textarea,
+pre, code, 
+img,
+dl, dt, dd, 
+ol, ul, li,
+img {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size:100%;
+	}
+
+ul, ol {list-style:none;}
+
+img {
+	max-width:100%; 
+	height:auto;
+	}
+	
+
+a,
+a:hover,
+a:visited {
+	text-decoration:none;
+	}
+	
+	
+/* 
+ * FORMS RESET 
+ */		
+input[type=text], 
+input[type=submit],
+input[type=reset],
+input[type=button], 
+input[type=image], 
+textarea,
+select {
+	-webkit-appearance: none; /* VIP - to override al i.e. iOS safari stryling) */
+	border-radius:0px;
+	} 
+	
+	
+/* option {cursor:pointer;} */ /* NOT WORKING !!! */
+label,
+input[type="submit"],
+input[type="reset"],
+button,
+select {
+    cursor:pointer; 
+    }
+
+
+/* input, */
+input[type=text], 
+input[type=password], 
+select, 
+textarea {
+	width:100%; 
+	}		
+	
+
+
+
+textarea {
+	/* resize:none; */
+	resize:vertical;
+	}	
+	
+		
+textarea {display: block;} /* to avoid default margin bottom due to display: inline(-block) */
+
+	
+	
+		
+/* TABLES */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	}
+</pre> 
+
+        </div>
+    </div>
+    
+
+
+
+
+
+    
+    
+    
+</div> <!-- /frontWrapper -->    
+
+
+
+
+
+
+
+
+            </div> <!-- /content -->
+    
+        </div> <!-- /container_content -->
+    </div> <!-- /container_section -->
+    
+
+    <div class="container_section_1 block">
+        <div class="container_content">
+    
+            <footer class="clearfix">
+            
+                <div id="footerContent">
+                    <div id="footerContent_line1">cowo-Reset</div>
+                    <!-- <div id="footerContent_line2">by <a href="http://cowowo.cat" target="_blank">cowowo</a></div> -->
+                </div>
+                
+            </footer>
+        
+        </div> <!-- /container_content -->
+    </div> <!-- /container_section -->
+
+
+</div> <!-- /container -->
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script type="text/javascript" src="js/project.js"></script>
+
+
+<!-- SyntaxHighlighter -->
+<script src="js/plugins/SyntaxHighlighter/shCore.js"></script>
+<script src="js/plugins/SyntaxHighlighter/shBrushJScript.js"></script>
+<script>
+	SyntaxHighlighter.all()
+</script>
+  
+  
+  
+</body>
+</html>
