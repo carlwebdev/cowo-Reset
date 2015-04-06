@@ -2,27 +2,14 @@
  * GLOBAL
  */
 
-
 /* SASS, COMPASS AND SUZY STUFF */
 /* @import "compass/css3"; */
 
-
-/* RESET */
-@import "base/reset";
-
-
-/* SASS */
-@import "sass/sass";
-
-
 /* BASE */
+@import "base/reset";
+@import "base/sass";
 @import "base/typography";
-
-
-/* LAYOUT */
-@import "layout/sticky_footer";
-@import "layout/macro_layout";
-
+@import "base/layout";
 
 /* COMPONENTS */
 @import "components/header";
