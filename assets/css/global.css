@@ -206,7 +206,7 @@ header .inner {
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Reset\/assets\/scss\/components\/_header\.scss}line{font-family:\0000333}}
 #slogan a {
-  color: #fff;
+  color: inherit;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Reset\/assets\/scss\/components\/_header\.scss}line{font-family:\0000335}}
 #slogan a:hover {
