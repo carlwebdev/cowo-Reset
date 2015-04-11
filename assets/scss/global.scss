@@ -1,9 +1,11 @@
 /*
- * GLOBAL
+ * Author: Carl Johansson @carlwebdev
+ * Project: cowo-Reset
+ * File: GLOBAL
  */
 
-/* SASS, COMPASS AND SUZY STUFF */
-/* @import "compass/css3"; */
+/* COMPASS */
+@import "compass/css3";
 
 /* BASE */
 @import "base/reset";
@@ -13,6 +15,5 @@
 
 /* COMPONENTS */
 @import "components/header";
-@import "components/nav";
 @import "components/footer";
 @import "components/content";
