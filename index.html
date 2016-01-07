@@ -2,7 +2,7 @@
 <head>
 <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,300' rel='stylesheet' type='text/css'>
 <meta charset="UTF-8">
-<title>cowo-Reset - a simple CSS reset by @carlwebdev</title>
+<title>cowo-Reset - a simple CSS reset by @carlwebdev ...</title>
 <meta name="description" content="cowo-Reset is a simple CSSS reset file built by cowowo.cat"> 
 <meta name="keywords" content="css reset"> 		
 <link rel="shortcut icon" href="assets/favicon/favicon.ico">
@@ -50,13 +50,22 @@
  */
 
 
+/*
+The point here is that box-sizing will not change any more. 
+Its purpose is to switch box models, 
+and its two values border-box and content-box are supported everywhere.
+*/
 /* 
  * BOX MODEL 
  */
 * {
 	@include box-sizing(border-box); /* Sass - Compass */
 	}
-	
+* {
+-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+-moz-box-sizing: border-box; /* Firefox, other Gecko */
+box-sizing: border-box; /* Opera/IE 8+ */
+}	
 	
 /* 
  * CSS RESET 
@@ -81,7 +90,7 @@ ul, ol {list-style:none;}
 
 img {
 	max-width:100%; 
-	height:auto;
+	height:auto; /* The height is added to ensure the aspect ratio of the image is retained. */
 	}
 	
 
