@@ -6,8 +6,9 @@
 <meta name="description" content="cowo-Reset is a simple CSSS reset file built by cowowo.cat"> 
 <meta name="keywords" content="css reset"> 		
 <link rel="shortcut icon" href="assets/favicon/favicon.ico">
-<link rel="stylesheet" type="text/css" href="assets/css/global.css" > 
+<link rel="stylesheet" href="assets/css/global.css" > 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes" />
+<!--<link rel="author" href="http://carljohansson.net/"/> -->
 <!-- SyntaxHighlighter -->
 <link rel="stylesheet" href="js/plugins/SyntaxHighlighter/shCore.css" />
 <link rel="stylesheet" href="js/plugins/SyntaxHighlighter/shCoreDefault.css" />
@@ -38,8 +39,8 @@
               
 	
   <main>
- 	 <div class="frame">
-      <div class="inner">
+     <div class="frame">
+        <div class="inner">
     
 <pre class="brush:javascript">
 /*
@@ -49,13 +50,22 @@
  */
 
 
+/*
+The point here is that box-sizing will not change any more. 
+Its purpose is to switch box models, 
+and its two values border-box and content-box are supported everywhere.
+*/
 /* 
  * BOX MODEL 
  */
 * {
 	@include box-sizing(border-box); /* Sass - Compass */
 	}
-	
+* {
+-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+-moz-box-sizing: border-box; /* Firefox, other Gecko */
+box-sizing: border-box; /* Opera/IE 8+ */
+}	
 	
 /* 
  * CSS RESET 
@@ -80,7 +90,7 @@ ul, ol {list-style:none;}
 
 img {
 	max-width:100%; 
-	height:auto;
+	height:auto; /* The height is added to ensure the aspect ratio of the image is retained. */
 	}
 	
 
@@ -156,7 +166,7 @@ table {
 
           <div class="footerContent">
             Made in Barcelona<br>
-            <span>by</span> <a href="http://cowowo.cat" target="_blank"><img src="assets/img/logos/logo_cowowo.png"></a>
+            <span>by</span> <a href="http://cowowo.cat" target="_blank"><img src="assets/img/logo_cowowo.png"></a>
           </div>
         
         </div> <!-- /inner -->

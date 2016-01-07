@@ -5,6 +5,7 @@
  */
 	
 header {
+	border-top: $spacing solid $c_primary_dark; // implement THIS N OTHER REPOS TOO
 	
 	.inner {
 		padding: $spacing025; 
@@ -31,7 +32,7 @@ header {
 			span {}
 			
 			a {
-				color:#fff;	// sass for inherit color !!!!!!!!			
+				color: inherit; // sass for inherit color !!!!!!!!	 NOT, but this new thing is very useful !!!! in sass environments 	
 				&:hover {color: $c_accent;}
 				}					
 
