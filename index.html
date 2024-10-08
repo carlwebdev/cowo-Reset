@@ -111,36 +111,63 @@ img {
 	font-size:100%;
 }
 
+
+
+/* 
+ *
+ * TYPOGRAPHY BASICS (RESET) 
+ *
+ */
+
 ul, ol {list-style:none;}
+
+a,
+a:hover,
+a:visited {
+	text-decoration: none;
+}
+
+
+/*
+blockquote, q {quotes:none;}	
+*/
+
+
+
+/* 
+ *
+ * MEDIA (RESET) 
+ *
+ */
+
 
 img {
 	max-width:100%; 
 	height:auto; /* The height is added to ensure the aspect ratio of the image is retained. */
-  display: block; /* to avoid default margin bottom due to display: inline(-block) */
-  width: 100%: 
+	display: block; /* to avoid default margin bottom due to display: inline(-block) */
+	width: 100%: 
 }
 	
-
-
 img,
 iframe {
-  display: block;
-  width: 100%;
+	display: block;
+	width: 100%;
 } // iframe  
 
 
 
 
-a,
-a:hover,
-a:visited {
-	text-decoration:none;
-}
+
+
 	
-	
+
+
 /* 
- * FORMS - RESET 
- */		
+ *
+ * FORMS (RESET) 
+ *
+ */
+	
 input[type=text], 
 input[type=submit],
 input[type=reset],
@@ -176,12 +203,17 @@ textarea {
 textarea {
 	/* resize:none; */
 	resize:vertical;
-  display: block; /* to avoid default margin bottom due to display: inline(-block) */
+	display: block; /* to avoid default margin bottom due to display: inline(-block) */
 }	
 	
+
+
+
 		
 /* 
- * TABLES 
+ *
+ * TABLES (RESET)  
+ *
  */
 table {
 	border-collapse: collapse;
