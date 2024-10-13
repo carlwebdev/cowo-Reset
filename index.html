@@ -49,19 +49,17 @@
 
 
 
- /* 
+/* 
  * BOX MODEL
  */
 *, *::before, *::after {
 	box-sizing: border-box;
 }
 
-
-
  /* 
- * 1 - REMOVE MARGIN AROUND THE PAGE 
- * BODY MARGIN 0 IS THE KEY - this is the actual solver for the body margin issue 
- */ 
+  * REMOVE MARGIN AROUND THE PAGE 
+  * BODY MARGIN 0 IS THE KEY - this is the actual solver for the body margin issue 
+  */ 
  html, body {
 	height: 100%; /* Useful for full-height layouts */
 	margin: 0;
@@ -75,12 +73,11 @@ body {
   }
 
 
-  /* 
-  *
-  * MEDIA (RESET) 
-  *
-  */
- 
+/* 
+ *
+ * MEDIA (RESET) 
+ *
+ */
  
  img {
 	 max-width:100%; 
@@ -123,16 +120,26 @@ ol, ul, li {
 }
 
 
-
-
-
 /* 
  *
  * TYPOGRAPHY BASICS (RESET) 
  *
  */
 
+ p {}
 
+
+/* Headings */	
+h1, h2, h3, h4, h5, h6 {
+	font-size: 100%; /* Reset for consistent sizing */
+	font-weight: normal; /* Reset to avoid bold headings */
+}
+
+ /* Links */
+ a, a:hover, a:visited {
+	 color: inherit;
+	 text-decoration: none;
+ }
 
 
 /* Lists */
@@ -141,11 +148,7 @@ ul, ol {
 	padding: 0; /* test this */
 }
 
-/* Links */
-a, a:hover, a:visited {
-	color: inherit;
-	text-decoration: none;
-}
+
 
 
 /*
